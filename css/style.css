@@ -1,0 +1,317 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    }
+    @font-face {
+    font-family: HankenBold;
+    src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+    }
+    @font-face {
+    font-family: HankenExtraBold;
+    src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+    }
+    @font-face {
+    font-family: HankenMedium;
+    src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+    }
+    
+    :root {
+        --main-color: #6743FF; /* var(--main-color) */
+        --second-color: #312DE4; /* var(--second-color) */
+        --third-color: #653FFF;
+        --fourth-color: #352FCD;
+    }
+
+/* Results Part */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .attribution { 
+      font-size: 11px; text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .Results {
+      background: linear-gradient(to bottom, var(--main-color), var(--second-color));
+      width: 368px;
+      height: 512px;
+      border-radius: 2rem;
+      z-index: 9;
+    }
+    h1 {
+      font-family: HankenBold;
+      color: #D9D5FF;
+      margin: 35px 0 40px 0;
+      font-size: 23px;
+    }
+    h2 {
+      font-family: HankenExtraBold;
+      color: #FEFFFF;
+      font-size: 50px;
+    }
+    h3 {
+      color: #D2D4FF;
+    }
+    h4 {
+      font-family: HankenBold;
+      color: #FEFFFF;
+      font-size: 30px;
+      margin: 40px 0px;
+    }
+    p {
+      font-family: HankenBold;
+      color: #8579FF ;
+      font-size: 13px;
+    }
+    .Result_text p {
+      font-family: HankenMedium;
+      color: #D1D7FF;
+      font-size: 17px;
+      margin: -25px 62px;
+    }
+    .Result_Number h2 {
+      font-family: HankenExtraBold;
+      color: #FEFFFF;
+      font-size: 82px;
+      margin: 40px 0 0 0;
+    }
+    .Result_Number p {
+      font-family: HankenBold;
+      color: #8579FF;
+      font-size: 17px;
+      margin: -10px 15px;
+    }
+    section {
+      width: 736px;
+      height: 512px;
+      filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+      display: flex;
+    }
+    .Result_Number {
+    border: 2px solid #452CDF;
+    background-color: #452CDF;
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    }
+
+/* Summary Part */
+    
+    .Summary {
+      width: 368px;
+      height: 512px;
+      border: 0px solid;
+      background-color: #FEFFFF;
+      border-radius: 0rem 3rem 3rem 0rem;
+      margin-left: -25px;
+    }
+    .Summary h2{
+      color: black;
+      text-align: start;
+      margin-left: 2.2em;
+      margin-top: 45px;
+      margin-bottom: 0;
+
+      font-size: 28px;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      padding: 10px 60px;
+      margin-bottom: 12px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 20px;
+      justify-content: space-between;
+    }
+    li p {
+      font-family: HankenBold;
+      font-size: 17px;
+      display: flex;
+      color: inherit;
+      margin-left: 15px;
+    }
+    li h3 {
+      font-family: HankenMedium;
+      font-size: 17px;
+      display: flex;
+      color: #9A96A7;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    li h4{
+      font-family: HankenMedium;
+      font-size: 17px;
+      display: flex;
+      color: black;
+    }
+    li svg {
+      margin-left: 20px;
+      margin-top: 1px;
+    }
+    .Reaction {
+    width: 288px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #FFF6F5;
+    margin-top: 30px;
+    color: #E4525C;
+    }
+    .Memory {
+    width: 288px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #FFFBF2;
+    color: #E1B061;
+    }
+    .Verbal {
+    width: 288px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #F2FBFA;
+    color: #4BA88D;
+    }
+    .Visual {
+    width: 288px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #F3F3FD;
+    color: #111DAF;
+    }
+    .li_start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    }
+    .li_end {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 15px;
+    }
+    .continue p{
+    width: 288px;
+    height: 56px;
+    font-size: 17px;
+    border-radius: 70px;
+    background-color: #303B59;
+    color: white;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .continue a{
+        color: white;
+        text-decoration: none;
+    }
+    .continue p:hover{
+    border-radius: 70px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--third-color), var(--fourth-color));
+    }
+
+    @media screen and (max-width: 375px) {
+        body {
+            height: 809px;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+        }
+        h1 {
+            font-size: 17px;
+            margin: 30px 0 30px 0;
+        }
+        .Results {
+            width: 100%;
+            height: 356px;
+            border-radius: 0 0 2rem 2rem;
+        }
+        .Result_Number{
+            display: flex;
+            align-items: center;
+            width: 138px;
+            height: 138px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .Result_Number h2 {
+            font-size: 52px;
+            margin: 0px 0px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Result_Number p {
+                font-size: 15px;
+                margin: -5px 0px;
+        }
+        .Result_text h4 {
+            font-size: 23px;
+            margin: 30px 0 20px 0;
+        }
+        .Result_text p {
+            font-size: 15px;
+            margin: 0px 55px;
+        }
+        .Summary {
+            height: 453px;
+        }
+        .Summary h2 {
+            margin-top: 30px;
+            font-size: 17px;
+        }
+        ul {
+            padding: 10px 30px;
+        }
+        li {
+            margin-bottom: 17px;
+        }
+        .Reaction {
+            margin-top: 25px;
+            width: 315px;
+        }
+        .Memory {
+            width: 315px;
+        }
+        .Visual {
+            width: 315px;
+        }
+        .Verbal {
+            width: 315px;
+        }
+        .continue p {
+            width: 315px;
+            margin-left: 30px;
+        }
+    }
